@@ -4,6 +4,15 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from "next/navigation";
+import { clsx } from "clsx";
+
+const dropdownLinks = [
+  { name: "Features", path: "/features" },
+  { name: "Quote", path: "/quote" },
+  { name: "Team", path: "/team" },
+  { name: "Testimonial", path: "/testimonial" },
+  { name: "career", path: "/career" },
+];
 
 const NavBar = () => {
   const pathName = usePathname();
@@ -18,45 +27,68 @@ const NavBar = () => {
         <ul className="flex items-center gap-8 text-base">
           <Link
             href="/"
-            className={`${pathName === "/" && "text-primary font-semibold"}`}
+            className={clsx(
+              pathName === "/" && "text-primary font-semibold",
+              "hover:text-primary"
+            )}
           >
             HOME
           </Link>
           <Link
             href="about"
-            className={`${
-              pathName === "/about" && "text-primary font-semibold"
-            }`}
+            className={clsx(
+              pathName === "/about" && "text-primary font-semibold",
+              "hover:text-primary"
+            )}
           >
             ABOUT
           </Link>
           <Link
             href="products"
-            className={`${
-              pathName === "/products" && "text-primary font-semibold"
-            }`}
+            className={clsx(
+              pathName === "/products" && "text-primary font-semibold",
+              "hover:text-primary"
+            )}
           >
             PRODUCTS
           </Link>
           <div className="relative group">
-            <button className="flex items-center gap-1 pointer">
+            <button
+              className={clsx(
+                "flex items-center gap-1 pointer",
+                "hover:text-primary"
+              )}
+            >
               GO-TO
               <IoIosArrowDown />
             </button>
-            <ul className="absolute left-0 w-40 gap-2 bg-yellow-400 rounded-md shadow-sm p-2 z-10 hidden group-hover:block ">
-              <Link href="/features">Features</Link>
-              <Link href="/quote">Free Quote</Link>
-              <Link href="/team">Our Team</Link>
-              <Link href="/testimonial">Testimonial</Link>
-              <Link href="/career">Career</Link>
+
+            <ul className="absolute left-0 w-40 bg-white rounded-md shadow-md z-10 hidden group-hover:block">
+              <div className="flex flex-col pt-2 gap-1">
+                {dropdownLinks.map((nav, index) => {
+                  return (
+                    <Link
+                      key={index}
+                      href={nav.path}
+                      className={clsx(
+                        pathName === nav.path && "bg-primary text-white",
+                        "hover:bg-gray-100 px-3"
+                      )}
+                    >
+                      {nav.name}
+                    </Link>
+                  );
+                })}
+              </div>
             </ul>
           </div>
 
           <Link
             href="contact"
-            className={`${
-              pathName === "/contact" && "text-primary font-semibold"
-            }`}
+            className={clsx(
+              pathName === "/contact" && "text-primary font-semibold",
+              "hover:text-primary"
+            )}
           >
             CONTACT
           </Link>
