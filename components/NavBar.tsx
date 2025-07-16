@@ -82,7 +82,6 @@ const NavBar = () => {
               </div>
             </ul>
           </div>
-
           <Link
             href="contact"
             className={clsx(
