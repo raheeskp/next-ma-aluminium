@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gray-100 flex items-center justify-between h-[8vh] px-10 text-sm">
+    <header className="bg-gray-100 flex items-center justify-between h-14 px-10 text-sm">
       <div className="flex items-center text-slate-800 gap-3">
         <MdLocationPin className="text-xl text-primary" />
         <div>Parappanpoyil, Thamarassery</div>

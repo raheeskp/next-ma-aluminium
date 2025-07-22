@@ -13,26 +13,23 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-
       description: "Best fabrication materials wholesale & retailer",
       image: "/images/carousel-1.jpg",
     },
     {
       id: 2,
-
       description: "Customer support with real time Assistance",
       image: "/images/carousel-2.jpg",
     },
     {
       id: 3,
-
       description: "Quality materials with 100% Guarantee",
       image: "/images/carousel-3.jpg",
     },
   ];
 
   return (
-    <div className="hero-carousel">
+    <div className="">
       <Swiper
         loop={true} // Enable infinite loop
         autoplay={{
@@ -51,7 +48,7 @@ const HeroCarousel = () => {
               <img
                 src={slide.image}
                 alt="img"
-                className="h-[80vh] w-full object-cover"
+                className="h-screen w-full object-cover"
               />
               <div className="absolute top-0 w-full h-full flex items-center justify-center bg-hero-back text-white p-5">
                 <div className="flex flex-col items-center justify-center p-5 gap-5 text-center max-w-3xl mx-auto">

@@ -18,13 +18,13 @@ const NavBar = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="flex items-center justify-between h-[12vh] shadow-gray-300 shadow-sm">
+    <nav className="flex items-center justify-between h-20 shadow-gray-300 shadow-sm">
       <Link href="/" className="flex items-center justify-center gap-2 px-10">
         <img src="/images/malogo.png" alt="logo" className="size-14" />
-        <h1 className="text-3xl font-bold text-primary">MA ALUMINIUM</h1>
+        <h1 className="text-3xl font-extrabold text-primary">MA ALUMINIUM</h1>
       </Link>
-      <div className="flex gap-8 h-full">
-        <ul className="flex items-center gap-8 text-base">
+      <div className="flex gap-7 h-full">
+        <ul className="flex items-center gap-8 text-md">
           <Link
             href="/"
             className={clsx(
@@ -63,7 +63,7 @@ const NavBar = () => {
               <IoIosArrowDown />
             </button>
 
-            <ul className="absolute left-0 w-40 bg-white rounded-md shadow-md z-10 hidden group-hover:block">
+            <ul className="absolute left-0 w-40 bg-white shadow-md z-10 hidden group-hover:block">
               <div className="flex flex-col pt-2 gap-1">
                 {dropdownLinks.map((nav, index) => {
                   return (
