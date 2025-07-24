@@ -64,7 +64,7 @@ const Products = () => {
               <div className="border-x-4 border-b-4 border-gray-100 py-5 px-8 text-center">
                 <h1 className="text-2xl font-bold">{item.cardTitle}</h1>
                 <p className="mt-3">{item.description}</p>
-                <div className="mt-5">
+                <div className="mt-7">
                   <Link
                     href=""
                     className="bg-primary text-white px-5 py-3 hover:bg-primary-hover"
