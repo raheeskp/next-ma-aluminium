@@ -5,43 +5,35 @@ import { FaUserCheck } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <section className="py-20">
-      <div className="flex items-center justify-evenly">
-        <div>
-          <div className="flex items-center gap-14">
-            <div className="bg-gray-100 p-2">
-              <BsCheckLg className="text-7xl text-primary" />
-            </div>
-            <h1 className="text-7xl font-bold text-gray-300">01</h1>
+    <section>
+      <div className="py-20 px-10 grid gap-10 md:grid md:grid-cols-2 sm:px-15 md:px-10 lg:grid lg:grid-cols-4 lg:gap-10 lg:px-20">
+        <div className="">
+          <div className="flex justify-between">
+            <BsCheckLg className="size-18 text-primary bg-gray-100" />
+            <h1 className="text-7xl font-bold text-gray-100">01</h1>
           </div>
-          <h4 className="text-xl font-bold mt-5">Quality Materials</h4>
+          <h4 className="text-xl font-bold mt-2">Quality Materials</h4>
         </div>
-        <div>
-          <div className="flex items-center gap-14">
-            <div className="bg-gray-100 p-2">
-              <LuDraftingCompass className="text-7xl text-primary" />
-            </div>
-            <h1 className="text-7xl font-bold text-gray-300">02</h1>
+        <div className="">
+          <div className="flex justify-between">
+            <LuDraftingCompass className="size-18 text-primary bg-gray-100" />
+            <h1 className="text-7xl font-bold text-gray-100">02</h1>
           </div>
-          <h4 className="text-xl font-bold mt-5">Free Consultation</h4>
+          <h4 className="text-xl font-bold mt-2">Free Consultation</h4>
         </div>
-        <div>
-          <div className="flex items-center gap-14">
-            <div className="bg-gray-100 p-2">
-              <BiSupport className="text-7xl text-primary" />
-            </div>
-            <h1 className="text-7xl font-bold text-gray-300">03</h1>
+        <div className="">
+          <div className="flex justify-between">
+            <BiSupport className="size-18 text-primary bg-gray-100" />
+            <h1 className="text-7xl font-bold text-gray-100">03</h1>
           </div>
-          <h4 className="text-xl font-bold mt-5">Customer Support</h4>
+          <h4 className="text-xl font-bold mt-2">Customer Support</h4>
         </div>
-        <div>
-          <div className="flex items-center gap-14">
-            <div className="bg-gray-100 p-2">
-              <FaUserCheck className="text-7xl text-primary" />
-            </div>
-            <h1 className="text-7xl font-bold text-gray-300">04</h1>
+        <div className="">
+          <div className="flex justify-between">
+            <FaUserCheck className="size-18 text-primary bg-gray-100" />
+            <h1 className="text-7xl font-bold text-gray-100">04</h1>
           </div>
-          <h4 className="text-xl font-bold mt-5">Trained Staffs</h4>
+          <h4 className="text-xl font-bold mt-2">Well Trained Staff</h4>
         </div>
       </div>
     </section>

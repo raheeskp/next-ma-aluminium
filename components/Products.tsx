@@ -46,11 +46,11 @@ const productsData = [
 
 const Products = () => {
   return (
-    <section className="p-24 ">
-      <h1 className="text-4xl font-extrabold text-center">
+    <section className="py-20">
+      <h1 className="text-2xl font-bold text-center lg:text-4xl">
         __ Products Available __
       </h1>
-      <div className="mt-16 grid grid-cols-3 gap-10">
+      <div className="px-5 mt-10 grid gap-5 sm:px-20 md:grid-cols-2 md:px-10 lg:grid-cols-3">
         {productsData.map((item) => {
           return (
             <div key={item.id} className="">

@@ -18,13 +18,13 @@ const NavBar = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="flex items-center justify-between h-20 shadow-gray-300 shadow-sm">
+    <nav className="hidden lg:flex items-center justify-between h-20 shadow-gray-300 shadow-sm">
       <Link href="/" className="flex items-center justify-center gap-2 px-10">
         <img src="/images/malogo.png" alt="logo" className="size-14" />
-        <h1 className="text-3xl font-extrabold text-primary">MA ALUMINIUM</h1>
+        <h1 className="text-3xl font-bold text-primary">MA ALUMINIUM</h1>
       </Link>
-      <div className="flex gap-7 h-full">
-        <ul className="flex items-center gap-8 text-md">
+      <div className="flex gap-4 h-full">
+        <ul className="flex items-center gap-5 text-md">
           <Link
             href="/"
             className={clsx(

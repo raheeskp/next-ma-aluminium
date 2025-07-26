@@ -52,18 +52,22 @@ const HeroCarousel = () => {
               />
               <div className="absolute top-0 w-full h-full flex items-center justify-center bg-hero-back text-white p-5">
                 <div className="flex flex-col items-center justify-center p-5 gap-5 text-center max-w-3xl mx-auto">
-                  <h2 className="text-lg font-bold">WELCOME TO MA ALUMINIUM</h2>
-                  <p className="text-6xl font-bold">{slide.description}</p>
+                  <h2 className="md:text-lg font-bold">
+                    WELCOME TO MA ALUMINIUM
+                  </h2>
+                  <p className="text-3xl md:text-6xl font-bold">
+                    {slide.description}
+                  </p>
                   <div className="flex gap-6 justify-center">
                     <Link
                       href="/about"
-                      className="bg-primary w-36 py-4 hover:bg-primary-hover"
+                      className="bg-primary text-sm font-bold w-24 p-2 md:w-36 md:py-4 hover:bg-primary-hover"
                     >
                       Read More
                     </Link>
                     <Link
                       href="/quote"
-                      className="bg-white w-36 py-4 text-black"
+                      className="bg-white text-sm font-bold w-24 p-2 md:w-36 md:py-4 text-black"
                     >
                       Free Quote
                     </Link>
