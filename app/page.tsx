@@ -3,6 +3,7 @@ import Features from "@/components/Features";
 import About from "@/components/About";
 import Products from "@/components/Products";
 import FeatureDetails from "@/components/FeatureDetails";
+import Quote from "@/components/Quote";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <About />
       <Products />
       <FeatureDetails />
+      <Quote />
     </div>
   );
 }

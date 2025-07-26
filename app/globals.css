@@ -3,6 +3,7 @@
 :root {
   --primary: #AB7442;
   --primary-hover:hsl(29, 36%, 54%);
+  --primary-ring:hsl(29, 95%, 78%);
   --herobackground:rgba(0, 0, 0, 0.3)
 
 }
@@ -10,6 +11,7 @@
 @theme inline {
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
+  --color-primary-ring: var( --primary-ring);
   --color-hero-back:var( --herobackground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

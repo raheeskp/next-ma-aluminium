@@ -6,7 +6,7 @@ import { HiUserGroup } from "react-icons/hi2";
 const About = () => {
   return (
     <section className="lg:grid grid-cols-2">
-      <div className="">
+      <div className="px-5">
         <img
           src="/images/about.jpg"
           alt=""
@@ -23,16 +23,16 @@ const About = () => {
         </p>
         <div className="flex flex-col gap-5 sm:grid grid-cols-2">
           <div className="flex flex-row gap-5">
-            <HiUserGroup className="size-18 text-primary bg-white" />
+            <HiUserGroup className="size-14 text-primary bg-white rounded-lg" />
             <div className="flex flex-col justify-center">
-              <span className="text-primary font-bold text-3xl">1000+</span>
+              <span className="text-primary font-bold text-xl">1000+</span>
               <span>Happy Clients</span>
             </div>
           </div>
           <div className="flex flex-row gap-5">
-            <BsCheckLg className="size-18 text-primary bg-white" />
+            <BsCheckLg className="size-14 text-primary bg-white rounded-lg" />
             <div className="flex flex-col justify-center">
-              <span className="text-primary font-bold text-3xl">5000+</span>
+              <span className="text-primary font-bold text-xl">5000+</span>
               <span>Dealings</span>
             </div>
           </div>
@@ -40,7 +40,7 @@ const About = () => {
         <div className="mt-5">
           <Link
             href="/about"
-            className="bg-primary px-12 py-5 text-white hover:bg-primary-hover"
+            className="text-sm bg-primary px-5 py-4 text-white font-bold hover:bg-primary-hover"
           >
             Explore More
           </Link>

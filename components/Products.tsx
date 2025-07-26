@@ -50,7 +50,7 @@ const Products = () => {
       <h1 className="text-2xl font-bold text-center lg:text-4xl">
         __ Products Available __
       </h1>
-      <div className="px-5 mt-10 grid gap-5 sm:px-20 md:grid-cols-2 md:px-10 lg:grid-cols-3">
+      <div className="px-5 mt-10 grid gap-6 sm:px-20 md:grid-cols-2 md:px-10 lg:grid-cols-3 lg:px-25">
         {productsData.map((item) => {
           return (
             <div key={item.id} className="">
@@ -67,7 +67,7 @@ const Products = () => {
                 <div className="mt-7">
                   <Link
                     href=""
-                    className="bg-primary text-white px-5 py-3 hover:bg-primary-hover"
+                    className="bg-primary text-sm text-white px-5 py-3 hover:bg-primary-hover"
                   >
                     Know More
                   </Link>

@@ -18,7 +18,7 @@ const NavBar = () => {
   const pathName = usePathname();
 
   return (
-    <nav className="hidden lg:flex items-center justify-between h-20 shadow-gray-300 shadow-sm">
+    <nav className="hidden bg-white lg:flex items-center justify-between h-20 shadow-gray-300 shadow-sm sticky top-0 z-50">
       <Link href="/" className="flex items-center justify-center gap-2 px-10">
         <img src="/images/malogo.png" alt="logo" className="size-14" />
         <h1 className="text-3xl font-bold text-primary">MA ALUMINIUM</h1>
@@ -94,7 +94,8 @@ const NavBar = () => {
         </ul>
         <Link
           href="/quote"
-          className="bg-primary flex px-10 items-center justify-center text-white gap-2"
+          className="bg-primary flex px-10 items-center justify-center
+           text-white gap-2 hover:bg-primary-hover"
         >
           Get a Quote
           <FaArrowRight />
