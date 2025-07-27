@@ -5,16 +5,18 @@ import { HiUserGroup } from "react-icons/hi2";
 
 const About = () => {
   return (
-    <section className="lg:grid grid-cols-2">
-      <div className="px-5">
+    <div className="bg-gray-100 lg:grid grid-cols-2">
+      <div className="px-5 lg:px-0">
         <img
           src="/images/about.jpg"
           alt=""
           className="size-full object-cover"
         />
       </div>
-      <div className="flex flex-col gap-5 bg-gray-100 px-5 py-10 text-gray-600 sm:px-20">
-        <h1 className="text-5xl font-bold text-black">About Us __</h1>
+      <div className="flex flex-col gap-5 py-10 px-5 justify-center text-gray-600 sm:px-20 lg:px-10 lg:pr-20">
+        <h1 className="text-2xl lg:text-4xl font-bold text-black">
+          About Us __
+        </h1>
         <p className="text-justify">
           We are one of the leading Fabrications materials wholesale & Retails
           sales institution in Calicut district, Kerala. We have 11+ years of
@@ -46,7 +48,7 @@ const About = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

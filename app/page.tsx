@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Products from "@/components/Products";
 import FeatureDetails from "@/components/FeatureDetails";
 import Quote from "@/components/Quote";
+import TeamMembers from "@/components/TeamMembers";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <Products />
       <FeatureDetails />
       <Quote />
+      <TeamMembers />
     </div>
   );
 }

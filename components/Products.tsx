@@ -46,7 +46,7 @@ const productsData = [
 
 const Products = () => {
   return (
-    <section className="py-20">
+    <div className="py-10">
       <h1 className="text-2xl font-bold text-center lg:text-4xl">
         __ Products Available __
       </h1>
@@ -77,7 +77,7 @@ const Products = () => {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

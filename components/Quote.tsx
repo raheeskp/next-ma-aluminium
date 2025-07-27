@@ -2,9 +2,9 @@
 
 const Quote = () => {
   return (
-    <section className="bg-gray-100 lg:grid grid-cols-2 ">
+    <section className="bg-gray-100 lg:grid grid-cols-2 mt-10">
       <div className="px-5 sm:px-10 md:px-20 lg:p-0">
-        <img src="/images/quote.jpg" alt="" className="w-full h-[600px]" />
+        <img src="/images/quote.jpg" alt="" className="w-full" />
       </div>
       <div className="px-5 sm:px-10 md:px-20 lg:flex flex-col justify-center lg:mr-10 lg:px-10">
         <h1 className="mt-5 text-2xl font-bold lg:text-4xl">Free Quote __</h1>
