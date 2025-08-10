@@ -13,7 +13,7 @@ const dropdownLinks = [
   { name: "Quote", path: "/quote" },
   { name: "Team", path: "/team" },
   { name: "Testimonial", path: "/testimonial" },
-  { name: "career", path: "/career" },
+  { name: "Career", path: "/career" },
 ];
 
 const NavBar = () => {

@@ -6,7 +6,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
 import Link from "next/link";
 
-const Header = () => {
+const TopBar = () => {
   return (
     <header className="hidden bg-gray-100 lg:flex items-center justify-between h-14 px-10 text-sm">
       <div className="flex items-center text-slate-800 gap-3">
@@ -36,4 +36,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default TopBar;

@@ -31,7 +31,7 @@ const team = [
 
 const TeamMembers = () => {
   return (
-    <section>
+    <div>
       <h1 className="mt-10 text-center text-2xl md:text-4xl font-bold">
         __ Team Members __
       </h1>
@@ -53,7 +53,7 @@ const TeamMembers = () => {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

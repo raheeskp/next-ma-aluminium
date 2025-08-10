@@ -14,7 +14,7 @@ const quote = () => {
           className="bg-hero-back absolute h-full w-full flex flex-col justify-center gap-2 
               top-0 pl-10 md:pl-30 text-white"
         >
-          <h1 className="text-4xl font-bold">Features</h1>
+          <h1 className="text-4xl font-bold">Free Quote</h1>
           <div>
             <Link href="/">Home</Link> / <span>Go-To</span> /{" "}
             <span>Free Quote</span>

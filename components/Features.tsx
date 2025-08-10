@@ -5,7 +5,7 @@ import { FaUserCheck } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <section>
+    <div>
       <div className="py-20 px-10 grid gap-10 md:grid md:grid-cols-2 sm:px-15 md:px-10 lg:grid lg:grid-cols-4 lg:gap-10 lg:px-20">
         <div className="">
           <div className="flex justify-between">
@@ -36,7 +36,7 @@ const Features = () => {
           <h4 className="text-xl font-bold mt-2">Well Trained Staff</h4>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

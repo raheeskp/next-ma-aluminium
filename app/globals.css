@@ -1,31 +1,26 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #AB7442;
-  --primary-hover:hsl(29, 36%, 54%);
-  --primary-ring:hsl(29, 95%, 78%);
-  --herobackground:rgba(0, 0, 0, 0.3)
-
+@theme {
+  --color-primary: #ab7442;
+  --color-primary-hover: hsl(29, 36%, 54%);
+  --color-primary-ring: hsl(29, 95%, 78%);
+  --color-hero-back: rgba(0, 0, 0, 0.3);
 }
 
-@theme inline {
-  --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
-  --color-primary-ring: var( --primary-ring);
-  --color-hero-back:var( --herobackground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .btn-primary {
+    @apply bg-primary w-full h-15 text-white font-bold hover:bg-primary-hover;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  .text-input {
+    @apply bg-white border border-gray-300 h-13 px-3 focus:outline-none focus:ring-2 ring-primary-ring;
+  }
+
+  .content-title {
+    @apply text-4xl font-bold text-gray-800 lg:text-6xl;
+  }
+
+  .text-area {
+    @apply bg-white border border-gray-300 p-2 w-full h-20 focus:outline-none focus:ring-2 ring-primary-ring;
+  }
 }
